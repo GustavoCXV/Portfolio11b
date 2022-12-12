@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    double nota1,nota2,nota3,nota4, média;
+	    Scanner entrada = new Scanner (System.in);
+	      
+	      //Programa pede ao usuário a informação 
+	       
+		System.out.println("Informe a nota 1:");
+		nota1 = entrada.nextDouble();
+		System.out.println("Informe a nota 2:");
+		nota2 = entrada.nextDouble();
+		System.out.println("Informe a nota 3:");
+		nota3 = entrada.nextDouble();
+		System.out.println("Informe a nota 4:");
+		nota4 = entrada.nextDouble();
+		
+		//cálculo da média usando as notas digitadas pleo usuário
+		
+		 média = (nota1+nota2+nota3+nota4)/4;
+		 
+		 System.out.println("A sua média é "+ média +"");
+		
+	}
+}
