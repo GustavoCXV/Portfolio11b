@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		
+		
+		
+		int n1, n2, n3, n4, q1, q2, q3, q4;
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		//Programa pede os números
+		
+		
+		System.out.println("Digite o primeiro número");
+		n1 = entrada.nextInt();
+		
+		System.out.println("Digite o segundo número");
+		n2 = entrada.nextInt();
+		
+		System.out.println("Digite o terceiro número");
+		n3 = entrada.nextInt();
+		
+		System.out.println("Digite o quarto número");
+		n4 = entrada.nextInt();
+		   
+		   
+		   //Cálculo do quadrado dos números
+		   
+		   q1 = (n1 * n1);
+		   q2 = (n2 * n2);
+		   q3 = (n3 * n3);
+		   q4 = (n4 * n4);
+		   
+		   
+		   //Resultados impressos
+		
+		 if (q3 <=1000 )System.out.println("O quadrado dos números são respectivamente "+ q1 +" quadrado de "+ n1 +", "+ q2 +" quadrado de "+ n2 +", 
+                           "+ q3 +" quadrado de "+ n3 +" e "+ q4+" quadrado de "+ n4 +"");
+		
+		if (q3 >=1000) System.out.println("O quadrado de "+ n3 +" é "+ q3 +"");
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,36 @@
+ import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int Idade;
+	    Scanner entrada = new Scanner (System.in);
+	          
+                //Programa pede a idade do nadador
+
+		System.out.println("Insira a idade do nadador:");
+		Idade = entrada.nextInt();
+
+		//Se o valor for 0 o sistema informa que o valor é inválido e pede ao usuário p/ digitar um valor válido
+
+		if (Idade<= 0) System.out.println("Idade inválida, digite um valor acima de 0");
+
+                     //Se o valor for de 1-4 o sistema informa que não há uma categoria p/ essas idades
+
+		if(Idade>=1 && Idade<=4) System.out.println("Não há uma categoria para essas idades");
+
+                     //Sistema informando a idade e grupo que o nadador pertence respectivamente
+
+
+	  if (Idade>=5 && Idade<=7) System.out.println("O nadador tem "+ Idade +"anos e pertence ao grupo infantil A");
+	if (Idade>=8 && Idade<=10) System.out.println("O nadador tem "+ Idade +" anos e pertence ao grupo infantil B");
+	
+	if (Idade>=11 && Idade<=13) System.out.println("O nadador tem "+ Idade +" anos e pertence ao grupo juvenil A");
+	if (Idade>=14 && Idade<=17) System.out.println("O nadador tem "+ Idade +" anos e pertence ao grupo juvenil B");
+	
+	if (Idade>=18)	System.out.println("O nadador tem "+ Idade +" anos e pertence ao grupo sênior");
+		
+		
+		
+	} 
+}

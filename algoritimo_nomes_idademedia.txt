@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		double idade1, idade2, media;
+		String PrimeiroNome, SegundoNome;
+		Scanner entrada = new Scanner(System.in);
+		  //Programa pede as informações ao usuário
+		System.out.println("Digite o primeiro nome");
+		PrimeiroNome = entrada.nextLine();
+		
+		System.out.println("Digite o segundo nome");
+		SegundoNome = entrada.nextLine();
+		
+		System.out.println("Digite a primeira idade");
+		idade1 = entrada.nextDouble();
+		
+		System.out.println("Digite a segunda idade");
+		idade2 = entrada.nextDouble();
+		  
+		  //Cálculo da média
+		  
+		  media = (idade1 + idade2)/2;
+		
+		
+		System.out.println("A primeira pessoa se chama "+ PrimeiroNome +" e tem "+ idade1 +" anos, a segunda pessoa se chama "+ SegundoNome +" e tem "+ idade2 +" anos. A média de suas idades é "+ media +"");
+	
+		
+	}
